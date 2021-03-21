@@ -11,6 +11,39 @@ body {
   direction: rtl;
 }
 
+.nav-top {
+  width: 100%;
+  background-image: linear-gradient(skyblue, blue);
+}
+
+.nav-top ul {
+  padding: 30px 30px;
+  margin: 0 auto;
+  max-width: 1233px;
+  text-align: center;
+}
+
+.nav-top ul li {
+  display: inline;
+  font-size: 26px;
+  margin: 20px;
+  transition: all 0.3s;
+}
+
+.nav-top ul li a {
+  padding: 20px;
+  text-decoration: none;
+  font-size: 26px;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s;
+}
+
+.nav-top ul li a:hover {
+  color: black;
+  background-color: rgb(255, 255, 255);
+  height: 50px;
+}
+
 input[type='text'] {
   width: 130px;
   box-sizing: border-box;

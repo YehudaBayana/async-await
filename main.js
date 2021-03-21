@@ -35,7 +35,9 @@ async function searchUsers() {
         <p class="card-text">ז'אנר: ${
           objItem.show.genres[0] ? objItem.show.genres[0] : `לא צוין`
         }</p>
-        <a href="${objItem.show.url}" class="btn btn-primary">לחץ כאן לצפייה</a>
+        <a href="${
+          objItem.show.url
+        }" target="_blank" class="btn btn-primary">לחץ כאן לצפייה</a>
       </div>
       </div>`;
     });
