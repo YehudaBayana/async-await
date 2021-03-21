@@ -12,27 +12,36 @@
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
+    <!-- font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Document</title>
   </head>
   <body>
-    <h1>יהודה סרטים</h1>
-    <div class="nav-top">
-      <ul>
-        <li><a href="#">דף הבית</a></li>
-        <li><a href="#">מוצרים</a></li>
-        <li><a href="#">מבצעים</a></li>
-        <li><a href="#">בגדים</a></li>
-        <li><a href="#">צור קשר</a></li>
-      </ul>
+    <div class="topnav">
+      <div class="container">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input
+              type="text"
+              placeholder="search series"
+              name="search"
+              id="searchInput"
+              oninput="searchUsers()"
+            />
+            <button type="submit">
+              <i class="fa fa-search" onclick="searchUsers()"></i>
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
-    <input
-      type="text"
-      placeholder="search series"
-      id="searchInput"
-      oninput="searchUsers()"
-    />
-    <br />
-    <button onclick="searchUsers()">חפש סדרה</button>
+    <h1>יהודה סרטים</h1>
     <div
       id="mainDiv"
       class="container d-flex flex-wrap justify-content-evenly"
